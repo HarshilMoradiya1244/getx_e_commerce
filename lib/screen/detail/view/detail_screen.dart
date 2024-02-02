@@ -52,6 +52,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                       child: ElevatedButton(onPressed: (){
                         controller.cartList.add(model);
                         Get.back();
+                        Get.snackbar("Add Successfully", "Check In Cart");
                       }, child: const Text("Add Cart"),
                       ),
                     )
